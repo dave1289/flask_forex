@@ -1,9 +1,18 @@
-{{%extends 'base.html'%}}
+{% extends 'base.html' %}
 
-{{% block title %}}
+{% block title %}
 Forex Converter
-{{%endblock%}}
+{% endblock %}
 
-{{%block body%}}
-<h1>NICE!</h1>
-{{% endblock %}}
+{% block body %}
+<h1 class="text-center display-3">Forex Converter</h1>
+
+<section id="form-container">
+   <form action="/convert" method="POST">
+      <label for="start">Converting from: </label><input type="text" name="start">
+      <label for="end">Converting to: </label><input type="text" name="end">
+      <label for="amount">Amount: </label><input type="text" name="amount">
+      <button>Convert</button>
+   </form>
+</section>
+{% endblock %}

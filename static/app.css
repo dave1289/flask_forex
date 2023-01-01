@@ -1,0 +1,36 @@
+input {
+   position: relative;
+   display:block;
+}
+
+#form-container {
+   display:flex;
+   justify-content:center;
+   flex: auto;
+   width: 25vw;
+   margin:auto;
+   border-radius: 5px;
+}
+
+.messages .error {
+   color: red;
+   background-color: rgba(255, 0, 0, 0.1);
+   border: 2px solid rgba(255, 0,0, 0.5);
+}
+
+.messages {
+   padding: 1rem;
+   margin: auto;
+   width: 500px;
+   text-align: center;
+}
+
+h1 {
+   margin-bottom: 25vh;
+}
+.messages p {
+   padding: 1rem;
+   font-size: 1.15rem;
+   border-radius: 5px;
+   box-shadow: 3px 1px 6px;
+}
